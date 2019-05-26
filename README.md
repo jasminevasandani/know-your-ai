@@ -34,6 +34,7 @@ It is not possible to mitigate bias in AI if there is no consideration of _at le
 - **The Framework**: I'm building a CNN model to detect facial expressions from images of people's faces. Typically, the categories used to classify facial expressions are emotions like happy, sad, angry, surprised, and so on. But facial expressions are not the same for all cultures. For example, a wink here (whereever "here" is for you) may not mean the same thing somewhere else. To classify and predict facial expressions, I'm not just simply using a framework like happy, sad, angry, etc. Instead, I'm using a framework that pushes back against the notion that emotions are universal. For this project, I classify and understand emotions according to the "navarasa" (or, nine emotions).
 
 **The Framework: Navarasa**
+<br>
 The navarasa were defined in the Sansrkit text, _Natya Shastra_ (200 BCE - 200 CE or 500 BCE - 500 CE) (1), written by Bharata Muni who was a South Asian theatrologist and musicologist. The _Natya Shastra_ is considered to be the foundational text for classical South Asian arts today. The _Natya Shastra_ coined the Sanskrit term _rasa_, which can be literally translated to mean  "sap" or "juice", but can also mean “essence,” “taste,” “flavor,” or "emotion" (2). In the text, Bharata states that the navarasa are "the basis of all human emotions" (3). The navarasa are: 
   - 1: 'adbhuta (astonishment)', 
   - 2: 'bibhatsa (disgust)', 
@@ -77,21 +78,21 @@ I implemented three CNN models that could predict facial expression. The most ef
   - Test accuracy: 67%
   - Train/Test assessment: overfit 
   - Notes: Given the small dataset and quality of images, it’s no surprise that the model is overfit.
-![model_1.png](https://raw.githubusercontent.com/jasminevasandani/know-your-ai/master/images/display_images/CNN_Model_1_scores.png?token=AGEJ3HQN7DC6KX7KTR6APFS45MKMI)
+![model_1.png](https://raw.githubusercontent.com/jasminevasandani/know-your-ai/master/images/display_images/CNN_Model_1_scores.png?token=AGEJ3HWKHJWNTHODD7L5SFK45MNF6)
 
 **Model #2: CNN on augmented data**
   - Test loss: 0.9
   - Test accuracy: 70% 
   - Train/Test assessment: fit
   - Notes: Image augmentation drastically corrected my model to make it more fit.
-![model_2.png](https://raw.githubusercontent.com/jasminevasandani/know-your-ai/master/images/display_images/CNN_Model_2_scores.png?token=AGEJ3HQJRJN7MB4ZXG5RBC245MKN6)
+![model_2.png](https://raw.githubusercontent.com/jasminevasandani/know-your-ai/master/images/display_images/CNN_Model_2_scores.png?token=AGEJ3HUVD3P6AJCI7L67O7C45MNHC)
 
 **Model #3: CNN on augmented data using `VGG16`**
   - Test loss: 1.3
   - Test accuracy: 62% 
   - Train/Test assessment: relatively fit
-  - Notes: Despite being trained on `VGG16` (a CNN model pre-trained on ~14 million RGB, 224x224 images belonging to 1000 categories), the model did not perform better. This could be because the original model was trained on RGB images and non-facial expressions, while my dataset consisted of grayscale images exclusively of distinct facial expressions. Further testing needs to be done.
-![model_3.png](https://raw.githubusercontent.com/jasminevasandani/know-your-ai/master/images/display_images/CNN_Model_3_scores.png?token=AGEJ3HR42WO6U5MS7TAIJHS45MKO4)
+  - Notes: Despite being trained on `VGG16` (a CNN model pre-trained on ~1.4 million RGB, 224x224 images belonging to 1000 categories), the model did not perform better. This could be because the original model was trained on RGB images and non-facial expressions, while my dataset consisted of grayscale images exclusively of distinct facial expressions. Further testing needs to be done.
+![model_3.png](https://raw.githubusercontent.com/jasminevasandani/know-your-ai/master/images/display_images/CNN_Model_3_scores.png?token=AGEJ3HUEOIVIVDUG675TMPS45MNHY)
 
 ## Model Evaluation
 The following image and probability comparisons show what the image and actual emotion is, compared to the predicted emotion is and the probabilities of each emotion that the CNN model detected on the face. You'll see that some images have a high probability of one or two emotions, while others have a wide ranging distribution of predicted emotions. **See [2_CNN_Modeling notebook](https://github.com/jasminevasandani/know-your-ai/blob/master/2_CNN_Modeling.ipynb) for more evaluation visualizations.** 
