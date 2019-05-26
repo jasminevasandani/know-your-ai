@@ -79,7 +79,7 @@ I implemented three CNN models that could predict facial expression. The most ef
   - Train/Test assessment: overfit 
   - Notes: Given the small dataset and quality of images, it’s no surprise that the model is overfit.
 
-![model_1.png](https://raw.githubusercontent.com/jasminevasandani/know-your-ai/master/images/display_images/CNN_Model_1_scores.png?token=AGEJ3HWKHJWNTHODD7L5SFK45MNF6)
+![model_1](https://raw.githubusercontent.com/jasminevasandani/know-your-ai/master/images/display_images/CNN_Model_1_scores.png?token=AGEJ3HWKHJWNTHODD7L5SFK45MNF6)
 
 **Model #2: CNN on augmented data**
   - Test loss: 0.9
@@ -87,15 +87,15 @@ I implemented three CNN models that could predict facial expression. The most ef
   - Train/Test assessment: fit
   - Notes: Image augmentation drastically corrected my model to make it more fit.
 
-![model_2.png](https://raw.githubusercontent.com/jasminevasandani/know-your-ai/master/images/display_images/CNN_Model_2_scores.png?token=AGEJ3HUVD3P6AJCI7L67O7C45MNHC)
+![model_2](https://raw.githubusercontent.com/jasminevasandani/know-your-ai/master/images/display_images/CNN_Model_2_scores.png?token=AGEJ3HUVD3P6AJCI7L67O7C45MNHC)
 
 **Model #3: CNN on augmented data using `VGG16`**
   - Test loss: 1.3
   - Test accuracy: 62% 
   - Train/Test assessment: relatively fit
   - Notes: Despite being trained on `VGG16` (a CNN model pre-trained on ~1.4 million RGB, 224x224 images belonging to 1000 categories), the model did not perform better. This could be because the original model was trained on RGB images and non-facial expressions, while my dataset consisted of grayscale images exclusively of distinct facial expressions. Further testing needs to be done.
-  
-![model_3.png](https://raw.githubusercontent.com/jasminevasandani/know-your-ai/master/images/display_images/CNN_Model_3_scores.png?token=AGEJ3HUEOIVIVDUG675TMPS45MNHY)
+
+![model_3](https://raw.githubusercontent.com/jasminevasandani/know-your-ai/master/images/display_images/CNN_Model_3_scores.png?token=AGEJ3HUEOIVIVDUG675TMPS45MNHY)
 
 ## Model Evaluation
 The following image and probability comparisons show what the image and actual emotion is, compared to the predicted emotion is and the probabilities of each emotion that the CNN model detected on the face. You'll see that some images have a high probability of one or two emotions, while others have a wide ranging distribution of predicted emotions. **See [2_CNN_Modeling notebook](https://github.com/jasminevasandani/know-your-ai/blob/master/2_CNN_Modeling.ipynb) for more evaluation visualizations.** 
