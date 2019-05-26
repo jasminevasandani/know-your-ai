@@ -15,10 +15,10 @@
  - [Acknowledgements](#Acknowledgements)
 
 ## How to Navigate this Repository
-- [data](https://github.com/jasminevasandani/know-your-ai/tree/master/data): Contains image pixels csv file and model weights
-- [images](https://github.com/jasminevasandani/know-your-ai/tree/master/images): Contains all data visualizations and other images that appear in this repository (except for the images used in my dataset)
-- [1_Image_Processing.ipynb](https://github.com/jasminevasandani/know-your-ai/blob/master/1_Image_Processing.ipynb): A Jupyter Notebook written in python that pre-processes image files into a csv. If you have your own facial image dataset that you need to prep for modeling, start with this notebook.
-- [2_CNN_Modeling.ipynb](https://github.com/jasminevasandani/know-your-ai/blob/master/2_CNN_Modeling.ipynb): A Jupyter Notebook written in python that develops three CNN models to predict facial expression. If you don't have an image dataset and want to use the one I created, start with this notebook.
+- [**data**](https://github.com/jasminevasandani/know-your-ai/tree/master/data): Contains image pixels csv file and model weights
+- [**images**](https://github.com/jasminevasandani/know-your-ai/tree/master/images): Contains all data visualizations and other images that appear in this repository (except for the images used in my dataset)
+- [**1_Image_Processing.ipynb**](https://github.com/jasminevasandani/know-your-ai/blob/master/1_Image_Processing.ipynb): A Jupyter Notebook written in python that pre-processes image files into a csv. If you have your own facial image dataset that you need to prep for modeling, start with this notebook.
+- [**2_CNN_Modeling.ipynb**](https://github.com/jasminevasandani/know-your-ai/blob/master/2_CNN_Modeling.ipynb): A Jupyter Notebook written in python that develops three CNN models to predict facial expression. If you don't have an image dataset and want to use the one I created, start with this notebook.
 
 ## Introduction
 I implement a framework to address bias in artificial intelligence (AI) through building a Convolutional Neural Network (CNN) to detect multicultural facial expressions. Bias in AI occurs for many reasons, but here are three primary factors that I will directly address in this project:
@@ -56,7 +56,7 @@ There is so much more to explain about the navarasa, but I will leave at that fo
 ## Methodology 
 To complete this project, I created a small, handpicked image dataset, pre-processed the images for modeling, trained my dataset on CNN models, and assessed my predictions. The model with the best fit augmented my image data, and the accuracy score was 69% compared to a baseline score of 12%. Considering the size and quality of my dataset, I am pleased with my results and can use this model as a starting point to train an even larger and better quality dataset. 
 
-![navarasa_faces.png](https://github.com/jasminevasandani/know-your-ai/blob/master/notebook_images/navarasa_faces.png?raw=true)
+![navarasa_faces.png](https://github.com/jasminevasandani/know-your-ai/blob/master/images/display_images/navarasa_faces.png?raw=true)
 [Image source for "srngara" face](https://www.flickr.com/photos/tjook/4746803656/in/photolist-9XdG49-vcFh7S-62Lxcp-pZWg1t-ain93R-4pF4Tj-qVmc3t-nAdLsE-6AvFTU-eEBsvZ-oeP8XZ-8VQ7Mk-nSHdPx-Ji7CH-nQkN6k-8esBmm-bnJ5Xz-N3Wfum-WKbD95-q1eDgh-e7wfGD-iGsRxx-aHcyre-rBfkRk-az6phv-avEQh5-aipWsh-dNyWsX-XtizkB-jbhRuk-9rgG3b-nZ9ti4-YoYm6E-31Dnp-p4jisb-qouL-9JdMW-4pSazz-8NpcSZ-pHLuGS-8moqdb-dQGBn4-4BZ2ib-p4jivC-21X7AXj-9goFCZ-95nxEX-bo1c8t-bCumKj-q1eRpW)
 
 | Data Science Workflow       | Description                                                                                                                                                                         |
@@ -69,7 +69,7 @@ To complete this project, I created a small, handpicked image dataset, pre-proce
 
 ## Modeling
 I implemented three CNN models that could predict facial expression. The most effective was model #2. Below is an example of what a CNN model's layers can look like. For an explanation on CNN modeling, see [2_CNN_Modeling notebook](https://github.com/jasminevasandani/know-your-ai/blob/master/2_CNN_Modeling.ipynb). 
-![CNN_layers](https://raw.githubusercontent.com/jasminevasandani/know-your-ai/master/images/display_images/cnn_model_1_graphic_.png?token=AGEJ3HSL2AF6V5HCRZWNE5C45MKXM)
+![CNN_layers](https://github.com/jasminevasandani/know-your-ai/blob/master/images/display_images/cnn_model_1_graphic_.png?raw=true)
 <br>
 <br> 
 **Model #1: CNN on original dataset of 1,032 images**
@@ -96,9 +96,13 @@ I implemented three CNN models that could predict facial expression. The most ef
 ## Model Evaluation
 The following image and probability comparisons show what the image and actual emotion is, compared to the predicted emotion is and the probabilities of each emotion that the CNN model detected on the face. You'll see that some images have a high probability of one or two emotions, while others have a wide ranging distribution of predicted emotions. **See [2_CNN_Modeling notebook](https://github.com/jasminevasandani/know-your-ai/blob/master/2_CNN_Modeling.ipynb) for more evaluation visualizations.** 
 <br>
+<br>
 ![proba_1.png](https://github.com/jasminevasandani/know-your-ai/blob/master/images/display_images/proba_1.png?raw=true)
 <br>
+<br>
 ![proba_2.png](https://github.com/jasminevasandani/know-your-ai/blob/master/images/display_images/proba_2.png?raw=true)
+<br>
+<br>
 ![proba_3.png](https://github.com/jasminevasandani/know-your-ai/blob/master/images/display_images/proba_3.png?raw=true)
 <br>
 <br>
