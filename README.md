@@ -78,7 +78,7 @@ I implemented three CNN models that could predict facial expression. The most ef
   - Test accuracy: 67%
   - Train/Test assessment: overfit 
   - Notes: Given the small dataset and quality of images, it’s no surprise that the model is overfit.
-<br>
+
 ![model_1.png](https://raw.githubusercontent.com/jasminevasandani/know-your-ai/master/images/display_images/CNN_Model_1_scores.png?token=AGEJ3HWKHJWNTHODD7L5SFK45MNF6)
 
 **Model #2: CNN on augmented data**
@@ -86,7 +86,7 @@ I implemented three CNN models that could predict facial expression. The most ef
   - Test accuracy: 70% 
   - Train/Test assessment: fit
   - Notes: Image augmentation drastically corrected my model to make it more fit.
-<br>
+
 ![model_2.png](https://raw.githubusercontent.com/jasminevasandani/know-your-ai/master/images/display_images/CNN_Model_2_scores.png?token=AGEJ3HUVD3P6AJCI7L67O7C45MNHC)
 
 **Model #3: CNN on augmented data using `VGG16`**
@@ -94,7 +94,7 @@ I implemented three CNN models that could predict facial expression. The most ef
   - Test accuracy: 62% 
   - Train/Test assessment: relatively fit
   - Notes: Despite being trained on `VGG16` (a CNN model pre-trained on ~1.4 million RGB, 224x224 images belonging to 1000 categories), the model did not perform better. This could be because the original model was trained on RGB images and non-facial expressions, while my dataset consisted of grayscale images exclusively of distinct facial expressions. Further testing needs to be done.
-<br>
+  
 ![model_3.png](https://raw.githubusercontent.com/jasminevasandani/know-your-ai/master/images/display_images/CNN_Model_3_scores.png?token=AGEJ3HUEOIVIVDUG675TMPS45MNHY)
 
 ## Model Evaluation
