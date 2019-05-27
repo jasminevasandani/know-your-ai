@@ -73,7 +73,7 @@ I implemented three CNN models that could predict facial expression. The most ef
 ![CNN_layers](images/display_images/cnn_model_1_graphic_.png)
 <br>
 <br> 
-**Model #1: CNN on original dataset of 1,032 images**
+**Model #1: CNN on original dataset of 1,035 images**
   - Test loss: 1.3
   - Test accuracy: 67%
   - Train/Test assessment: overfit 
