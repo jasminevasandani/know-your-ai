@@ -1,6 +1,6 @@
 # Know Your AI: Developing a Framework to Address Bias in Facial Expression Recognition
 ## Training a Convolutional Neural Network (CNN) to Recognize Multicultural Facial Expressions
-![image of rasas](https://github.com/jasminevasandani/know-your-ai/blob/master/images/display_images/navarasa_banner.png?raw=true)
+![image of rasas](images/display_images/navarasa_banner.png)
 
 **Note:** Because of image rights for certain images, this repository can only be used for research purposes, and no images from this repository shall be reproduced elsewhere. Appropriate image credit is given where necessary. The image dataset used in this project cannot be shared in this repository because of specific image rights for the various image resources I used. However, if you want to run the notebooks in this repository, you can start with [2_CNN_Modeling](https://github.com/jasminevasandani/know-your-ai/blob/master/2_CNN_Modeling.ipynb). For more info on the images used to build my dataset, see [Sources](#Sources) section of this README.
 <br>
@@ -57,7 +57,7 @@ There is so much more to explain about the navarasa, but I will leave at that fo
 ## Methodology 
 To complete this project, I created a small, handpicked image dataset, pre-processed the images for modeling, trained my dataset on CNN models, and assessed my predictions. The model with the best fit augmented my image data, and the accuracy score was 69% compared to a baseline score of 12%. Considering the size and quality of my dataset, I am pleased with my results and can use this model as a starting point to train an even larger and better quality dataset. 
 
-![navarasa_faces.png](https://github.com/jasminevasandani/know-your-ai/blob/master/images/display_images/navarasa_faces.png?raw=true)
+![navarasa_faces.png](images/display_images/navarasa_faces.png)
 [Image source for "srngara" face](https://www.flickr.com/photos/tjook/4746803656/in/photolist-9XdG49-vcFh7S-62Lxcp-pZWg1t-ain93R-4pF4Tj-qVmc3t-nAdLsE-6AvFTU-eEBsvZ-oeP8XZ-8VQ7Mk-nSHdPx-Ji7CH-nQkN6k-8esBmm-bnJ5Xz-N3Wfum-WKbD95-q1eDgh-e7wfGD-iGsRxx-aHcyre-rBfkRk-az6phv-avEQh5-aipWsh-dNyWsX-XtizkB-jbhRuk-9rgG3b-nZ9ti4-YoYm6E-31Dnp-p4jisb-qouL-9JdMW-4pSazz-8NpcSZ-pHLuGS-8moqdb-dQGBn4-4BZ2ib-p4jivC-21X7AXj-9goFCZ-95nxEX-bo1c8t-bCumKj-q1eRpW)
 
 | Data Science Workflow       | Description                                                                                                                                                                         |
@@ -70,7 +70,7 @@ To complete this project, I created a small, handpicked image dataset, pre-proce
 
 ## CNN Modeling
 I implemented three CNN models that could predict facial expression. The most effective was model #2. Below is an example of what a CNN model's layers can look like. For an explanation on CNN modeling, see [2_CNN_Modeling notebook](https://github.com/jasminevasandani/know-your-ai/blob/master/2_CNN_Modeling.ipynb). 
-![CNN_layers](https://github.com/jasminevasandani/know-your-ai/blob/master/images/display_images/cnn_model_1_graphic_.png?raw=true)
+![CNN_layers](images/display_images/cnn_model_1_graphic_.png)
 <br>
 <br> 
 **Model #1: CNN on original dataset of 1,032 images**
@@ -101,16 +101,16 @@ I implemented three CNN models that could predict facial expression. The most ef
 The following image and probability comparisons show what the image and actual emotion is, compared to the predicted emotion is and the probabilities of each emotion that the CNN model detected on the face. You'll see that some images have a high probability of one or two emotions, while others have a wide ranging distribution of predicted emotions. **See [2_CNN_Modeling notebook](https://github.com/jasminevasandani/know-your-ai/blob/master/2_CNN_Modeling.ipynb) for more evaluation visualizations.** 
 <br>
 <br>
-![proba_1.png](https://raw.githubusercontent.com/jasminevasandani/know-your-ai/master/images/display_images/proba_1.png?token=AGEJ3HWDMH54VHUOOCK7Y6C45N4MW)
+![proba_1.png](images/display_images/proba_1.png)
 <br>
 <br>
-![proba_2.png](https://raw.githubusercontent.com/jasminevasandani/know-your-ai/master/images/display_images/proba_2.png?token=AGEJ3HV6VWFV47P37AQZLNK45N4MC)
+![proba_2.png](images/display_images/proba_2.png)
 <br>
 <br>
-![proba_3.png](https://raw.githubusercontent.com/jasminevasandani/know-your-ai/master/images/display_images/proba_3.png?token=AGEJ3HQMHOHZYXQUVBIWI7245N4LE)
+![proba_3.png](images/display_images/proba_3.png)
 <br>
 <br>
-![proba_4.png](https://raw.githubusercontent.com/jasminevasandani/know-your-ai/master/images/display_images/proba_4.png?token=AGEJ3HRLCYGTNJD6ZB6JMHS45N4KA)
+![proba_4.png](images/display_images/proba_4.png)
 <br>
 <br>
 Below is a confusion matrix that shows true versus predicted emotions. The model tended to confuse the following emotions with each other: 
@@ -118,7 +118,7 @@ Below is a confusion matrix that shows true versus predicted emotions. The model
   - roudra (anger) and bibhatsa (disgust)
   - roudra (anger) and karuna (sorrow)
 
-![conf_matrix.png](https://github.com/jasminevasandani/know-your-ai/blob/master/images/display_images/conf_matrix.png?raw=true)
+![conf_matrix.png](images/display_images/conf_matrix.png)
 
 ## Conclusions and Next Steps 
 My main priorities while working on this project were to have a clear and strategic workflow for: 
