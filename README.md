@@ -101,13 +101,13 @@ I implemented three CNN models that could predict facial expression. The most ef
 The following image and probability comparisons show what the image and actual emotion is, compared to the predicted emotion is and the probabilities of each emotion that the CNN model detected on the face. You'll see that some images have a high probability of one or two emotions, while others have a wide ranging distribution of predicted emotions. **See [2_CNN_Modeling notebook](https://github.com/jasminevasandani/know-your-ai/blob/master/2_CNN_Modeling.ipynb) for more evaluation visualizations.** 
 <br>
 <br>
-![proba_1.png](https://raw.githubusercontent.com/jasminevasandani/know-your-ai/master/images/display_images/proba_1.png?token=AGEJ3HRYASEI4ZPI6HKXIRC45N3IK)
+![proba_1.png](https://raw.githubusercontent.com/jasminevasandani/know-your-ai/master/images/dataviz/CNN_Model_1_scores.png?token=AGEJ3HR3LQ7YOHDU2UA7OXK45N3VA)
 <br>
 <br>
-![proba_2.png](https://raw.githubusercontent.com/jasminevasandani/know-your-ai/master/images/display_images/proba_2.png?token=AGEJ3HXRXUED6FQQ54NXHES45N3KA)
+![proba_2.png](https://raw.githubusercontent.com/jasminevasandani/know-your-ai/master/images/dataviz/CNN_Model_2_scores.png?token=AGEJ3HVBOJX3NGD2DBVRN3C45N3WA)
 <br>
 <br>
-![proba_3.png](https://raw.githubusercontent.com/jasminevasandani/know-your-ai/master/images/display_images/proba_3.png?token=AGEJ3HSAOHIVYDD42YDF74K45N3LA)
+![proba_3.png](https://raw.githubusercontent.com/jasminevasandani/know-your-ai/master/images/dataviz/CNN_Model_3_scores.png?token=AGEJ3HQDOX4PQVTEH2OUBFS45N3W4)
 <br>
 <br>
 ![proba_4.png](https://raw.githubusercontent.com/jasminevasandani/know-your-ai/master/images/display_images/proba_4.png?token=AGEJ3HTVCHWIWAW5P2FY6CK45N3M2)
