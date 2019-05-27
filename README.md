@@ -74,7 +74,7 @@ I implemented three CNN models that could predict facial expression. The most ef
 <br>
 <br> 
 **Model #1: CNN on original dataset of 1,032 images**
-  - Test loss: 1.4
+  - Test loss: 1.3
   - Test accuracy: 67%
   - Train/Test assessment: overfit 
   - Notes: Given the small dataset and quality of images, it’s no surprise that the model is overfit.
@@ -82,8 +82,8 @@ I implemented three CNN models that could predict facial expression. The most ef
 ![model_1](images/dataviz/CNN_Model_1_scores.png)
 
 **Model #2: CNN on augmented data**
-  - Test loss: 0.9
-  - Test accuracy: 70% 
+  - Test loss: 0.8
+  - Test accuracy: 74% 
   - Train/Test assessment: fit
   - Notes: Image augmentation drastically corrected my model to make it more fit.
 
@@ -91,7 +91,7 @@ I implemented three CNN models that could predict facial expression. The most ef
 
 **Model #3: CNN on augmented data using `VGG16`**
   - Test loss: 1.3
-  - Test accuracy: 62% 
+  - Test accuracy: 58% 
   - Train/Test assessment: relatively fit
   - Notes: Despite being trained on `VGG16` (a CNN model pre-trained on ~1.4 million RGB, 224x224 images belonging to 1000 categories), the model did not perform better. This could be because the original model was trained on RGB images and non-facial expressions, while my dataset consisted of grayscale images exclusively of distinct facial expressions. Further testing needs to be done.
 
