@@ -79,7 +79,7 @@ I implemented three CNN models that could predict facial expression. The most ef
   - Train/Test assessment: overfit 
   - Notes: Given the small dataset and quality of images, it’s no surprise that the model is overfit.
 
-![model_1](https://raw.githubusercontent.com/jasminevasandani/know-your-ai/master/images/display_images/CNN_Model_1_scores.png?token=AGEJ3HWBCYYPD4LC2H3GHW245N2TS)
+![model_1](images/dataviz/CNN_Model_1_scores.png)
 
 **Model #2: CNN on augmented data**
   - Test loss: 0.9
@@ -87,7 +87,7 @@ I implemented three CNN models that could predict facial expression. The most ef
   - Train/Test assessment: fit
   - Notes: Image augmentation drastically corrected my model to make it more fit.
 
-![model_2](https://raw.githubusercontent.com/jasminevasandani/know-your-ai/master/images/display_images/CNN_Model_2_scores.png?token=AGEJ3HSWTNJ3KA6DBAM7H3C45N2WE)
+![model_2](images/dataviz/CNN_Model_2_scores.png)
 
 **Model #3: CNN on augmented data using `VGG16`**
   - Test loss: 1.3
@@ -95,22 +95,22 @@ I implemented three CNN models that could predict facial expression. The most ef
   - Train/Test assessment: relatively fit
   - Notes: Despite being trained on `VGG16` (a CNN model pre-trained on ~1.4 million RGB, 224x224 images belonging to 1000 categories), the model did not perform better. This could be because the original model was trained on RGB images and non-facial expressions, while my dataset consisted of grayscale images exclusively of distinct facial expressions. Further testing needs to be done.
 
-![model_3](https://raw.githubusercontent.com/jasminevasandani/know-your-ai/master/images/display_images/CNN_Model_3_scores.png?token=AGEJ3HSNZMPUT26GI37XDWC45N2XA)
+![model_3](images/dataviz/CNN_Model_3_scores.png)
 
 ## Model Evaluation
 The following image and probability comparisons show what the image and actual emotion is, compared to the predicted emotion is and the probabilities of each emotion that the CNN model detected on the face. You'll see that some images have a high probability of one or two emotions, while others have a wide ranging distribution of predicted emotions. **See [2_CNN_Modeling notebook](https://github.com/jasminevasandani/know-your-ai/blob/master/2_CNN_Modeling.ipynb) for more evaluation visualizations.** 
 <br>
 <br>
-![proba_1.png](https://raw.githubusercontent.com/jasminevasandani/know-your-ai/master/images/dataviz/CNN_Model_1_scores.png?token=AGEJ3HR3LQ7YOHDU2UA7OXK45N3VA)
+![proba_1.png](https://raw.githubusercontent.com/jasminevasandani/know-your-ai/master/images/display_images/proba_1.png?token=AGEJ3HWDMH54VHUOOCK7Y6C45N4MW)
 <br>
 <br>
-![proba_2.png](https://raw.githubusercontent.com/jasminevasandani/know-your-ai/master/images/dataviz/CNN_Model_2_scores.png?token=AGEJ3HVBOJX3NGD2DBVRN3C45N3WA)
+![proba_2.png](https://raw.githubusercontent.com/jasminevasandani/know-your-ai/master/images/display_images/proba_2.png?token=AGEJ3HV6VWFV47P37AQZLNK45N4MC)
 <br>
 <br>
-![proba_3.png](https://raw.githubusercontent.com/jasminevasandani/know-your-ai/master/images/dataviz/CNN_Model_3_scores.png?token=AGEJ3HQDOX4PQVTEH2OUBFS45N3W4)
+![proba_3.png](https://raw.githubusercontent.com/jasminevasandani/know-your-ai/master/images/display_images/proba_3.png?token=AGEJ3HQMHOHZYXQUVBIWI7245N4LE)
 <br>
 <br>
-![proba_4.png](https://raw.githubusercontent.com/jasminevasandani/know-your-ai/master/images/display_images/proba_4.png?token=AGEJ3HTVCHWIWAW5P2FY6CK45N3M2)
+![proba_4.png](https://raw.githubusercontent.com/jasminevasandani/know-your-ai/master/images/display_images/proba_4.png?token=AGEJ3HRLCYGTNJD6ZB6JMHS45N4KA)
 <br>
 <br>
 Below is a confusion matrix that shows true versus predicted emotions. The model tended to confuse the following emotions with each other: 
