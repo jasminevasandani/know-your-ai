@@ -29,7 +29,7 @@ I implement a framework to address bias in artificial intelligence (AI) through 
 
 It is not possible to mitigate bias in AI if there is no consideration of _at least_ these three factors. Here's how I attempt to mitigate bias in AI through addressing the three aforementioned factors:
 
-- **The Data**: I made sure to include images people of color, gender non-conforming people, young and old people in the dataset that I would use to train my model.
+- **The Data**: I made sure to include images of people of color, gender non-conforming people, young and old people in the dataset that I would use to train my model.
 - **The Person**: I am affected by and deeply concerned by bias in AI.
 - **The Framework**: I'm building a CNN model to detect facial expressions from images of people's faces. Typically, the categories used to classify facial expressions are emotions like happy, sad, angry, surprised, and so on. But facial expressions are not the same for all cultures. For example, a wink here (whereever "here" is for you) may not mean the same thing somewhere else. To classify and predict facial expressions, I'm not just simply using a framework like happy, sad, angry, etc. Instead, I'm using a framework that pushes back against the notion that emotions are universal. For this project, I classify and understand emotions according to the "navarasa" (or, nine emotions).
 
@@ -46,7 +46,7 @@ The navarasa were defined in the Sansrkit text, _Natya Shastra_ (200 BCE - 200 C
   - 8: 'srngara (love)', 
   - 9: 'veera (confidence)'
 
-There is so much more to explain about the navarasa, but I will leave at that for the sake of this project. With more time and resources, I hope to dive deeper into the concept of the navarasa and other cultural expressions to develop more nuanced AI frameworks. For now, this is enough to understand how the navarasa are used in this project. 
+There is so much more to explain about the navarasa, but I will leave it at that for the sake of this project. With more time and resources, I hope to dive deeper into the concept of the navarasa and other cultural expressions to develop more nuanced AI frameworks. For now, this is enough to understand how the navarasa are used in this project. 
 
 **Navarasa Sources**: 
 - (1) https://en.wikipedia.org/wiki/Bharata_Muni
@@ -156,4 +156,4 @@ I hand-selected images from each of these sources. Keep in mind that many royalt
 Deep Learning by Francois Chollet.
 
 ## Acknowledgements 
-Thanks to the following people who guided and supported me as I completed this project: Anuva Kalawar, Adiwid (Boom) Devahastin Na Ayudhya, Matthew Brems, Riley Dallas, Tim Book.
+A huge hanks to the following people who guided me as I completed this project--I couldn't have completed this without your support: Anuva Kalawar, Adiwid (Boom) Devahastin Na Ayudhya, Matthew Brems, Riley Dallas, Tim Book.
