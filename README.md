@@ -156,4 +156,4 @@ I hand-selected images from each of these sources. Keep in mind that many royalt
 Deep Learning by Francois Chollet.
 
 ## Acknowledgements 
-A huge hanks to the following people who guided me as I completed this project--I couldn't have completed this without your support: Anuva Kalawar, Adiwid (Boom) Devahastin Na Ayudhya, Matthew Brems, Riley Dallas, Tim Book.
+A huge hanks to the following people who guided me as I completed this project: Anuva Kalawar, Adiwid (Boom) Devahastin Na Ayudhya, Matthew Brems, Riley Dallas, Tim Book.
