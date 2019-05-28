@@ -35,7 +35,7 @@ It is not possible to mitigate bias in AI if there is no consideration of _at le
 
 **The Framework: Navarasa**
 <br>
-The navarasa were defined in the Sansrkit text, _Natya Shastra_ (200 BCE - 200 CE or 500 BCE - 500 CE) (1), written by Bharata Muni who was a South Asian theatrologist and musicologist. The _Natya Shastra_ is considered to be the foundational text for classical South Asian arts today. The _Natya Shastra_ coined the Sanskrit term _rasa_, which can be literally translated to mean  "sap" or "juice", but can also mean “essence,” “taste,” “flavor,” or "emotion" (2). In the text, Bharata states that the navarasa are "the basis of all human emotions" (3). The navarasa are: 
+The navarasa were defined in the Sanskrit text, _Natya Shastra_ (200 BCE - 200 CE or 500 BCE - 500 CE) (1), written by Bharata Muni who was a South Asian theatrologist and musicologist. The _Natya Shastra_ is considered to be the foundational text for classical South Asian arts today. The _Natya Shastra_ coined the Sanskrit term _rasa_, which can be literally translated to mean  "sap" or "juice", but can also mean “essence,” “taste,” “flavor,” or "emotion" (2). In the text, Bharata states that the navarasa are "the basis of all human emotions" (3). The navarasa are: 
   - 1: 'adbhuta (astonishment)', 
   - 2: 'bibhatsa (disgust)', 
   - 3: 'bhayanaka (fear)', 
@@ -113,10 +113,10 @@ The following image and probability comparisons show what the image and actual e
 ![proba_4.png](images/display_images/proba_4.png)
 <br>
 <br>
-Below is a confusion matrix that shows true versus predicted emotions. The model tended to confuse the following emotions with each other: 
-  - roudra (anger) and veera (confidence)
+Below is a confusion matrix that shows true versus predicted emotions. Here are some notable emotions that the model tended to confuse with each other: 
+  - adbhuta (astonishment) and bibhatsa (disgust)
+  - bhayanaka (fear) and karuna (sorrow)
   - roudra (anger) and bibhatsa (disgust)
-  - roudra (anger) and karuna (sorrow)
 
 ![conf_matrix.png](images/display_images/conf_matrix.png)
 
