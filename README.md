@@ -30,7 +30,7 @@ I implement a framework to address bias in artificial intelligence (AI) through 
 It is not possible to mitigate bias in AI if there is no consideration of _at least_ these three factors. Here's how I attempt to mitigate bias in AI through addressing the three aforementioned factors:
 
 - **The Data**: I made sure to include images of people of color, gender non-conforming people, young and old people in the dataset that I would use to train my model.
-- **The Person**: I am affected by and deeply concerned by bias in AI.
+- **The Person**: I am affected by and deeply concerned with bias in AI.
 - **The Framework**: I'm building a CNN model to detect facial expressions from images of people's faces. Typically, the categories used to classify facial expressions are emotions like happy, sad, angry, surprised, and so on. But facial expressions are not the same for all cultures. For example, a wink here (whereever "here" is for you) may not mean the same thing somewhere else. To classify and predict facial expressions, I'm not just simply using a framework like happy, sad, angry, etc. Instead, I'm using a framework that pushes back against the notion that emotions are universal. For this project, I classify and understand emotions according to the "navarasa" (or, nine emotions).
 
 **The Framework: Navarasa**
